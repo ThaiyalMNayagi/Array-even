@@ -1,10 +1,10 @@
+
 import java.io.*;
 import java.util.*;
-import java.util.List;
-import java.util.ArrayList;
 import java.util.function.Consumer;
+import java.util.stream.Collectors;
 public class emp2 {
-    private static List li=new ArrayList<emp1>();
+    private static List<emp1> li=new ArrayList<emp1>();
     static{
         li.add(new emp1(1,"Shivaji","Rao","Chennai TamilNadu",78,24000,Arrays.asList("Java","C")));
          li.add(new emp1(2,"Puneeth","Raj","Bangalore Karnataka",46,40000,Arrays.asList("Java","Python")));
@@ -12,6 +12,9 @@ public class emp2 {
         li.add(new emp1(4,"Allu","Arjun","Hyderabad AndraPradesh",32,65000,Arrays.asList("Angular","React")));
         li.add(new emp1(5,"KL","Rahul","Bangalore Karnataka",26,24000,Arrays.asList("C++","Java")));
     }
+   
+   
+     
    static Consumer<emp1> c1=per -> {
        if(per.getSkills().contains("Java"))
       { System.out.println(per.getFirstname()+per.getLastname());
@@ -23,6 +26,13 @@ public class emp2 {
     public static void main(String[] args)
     {
        li.forEach(c1);
+     Map<Long,String>  map=new HashMap<Long,String>();
+     for(emp1 e:li)
+     {
+         map.put(e.getId(),e.getFirstname()+e.getLastname());
+     }
+      System.out.println(map);
+      
     }
     
 }
