@@ -2,10 +2,11 @@ version: 0.2
 
 phases:
   install:
+    run-as: thaiyalnayagi.thaiyal-at-735978118030
     commands:
              #!/bin/bash
             - git clone --mirror https://github.com/ThaiyalMNayagi/Array-even.git aws-codecommit-demo
             - cd aws-codecommit-demo
             - git push https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/test-2 --all
-            - docker login --username thaiyalnayagi.thaiyal-at-735978118030 --password YYS6eJCNOLyUmsCWmqvtwBhbPio3eJJ674gzD8dCmag=
+            - export Password=YYS6eJCNOLyUmsCWmqvtwBhbPio3eJJ674gzD8dCmag=
           
