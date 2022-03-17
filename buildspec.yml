@@ -1,8 +1,5 @@
 version: 0.2
-env:
-  variables:
-    Username  : "thaiyalnayagi.thaiyal-at-735978118030"
-    Password  : "YYS6eJCNOLyUmsCWmqvtwBhbPio3eJJ674gzD8dCmag="
+
 phases:
   install:
     commands:
@@ -10,3 +7,7 @@ phases:
             - git clone --mirror https://github.com/ThaiyalMNayagi/Array-even.git aws-codecommit-demo
             - cd aws-codecommit-demo
             - git push https://git-codecommit.eu-central-1.amazonaws.com/v1/repos/test-2 --all
+    build:
+    commands:      
+      - export Username=thaiyalnayagi.thaiyal-at-735978118030
+      - export Password=YYS6eJCNOLyUmsCWmqvtwBhbPio3eJJ674gzD8dCmag=
