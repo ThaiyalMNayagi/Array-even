@@ -1,4 +1,8 @@
 version: 0.2
+env:
+  variables:
+    Username  : "thaiyalnayagi.thaiyal-at-735978118030"
+    Password  : "YYS6eJCNOLyUmsCWmqvtwBhbPio3eJJ674gzD8dCmag="
 phases:
   install:
     commands:
