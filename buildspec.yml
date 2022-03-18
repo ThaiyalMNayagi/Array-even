@@ -5,6 +5,6 @@ phases:
              #!/bin/bash
             - git clone --mirror https://github.com/ThaiyalMNayagi/Array-even.git aws-codecommit-demo
             - cd aws-codecommit-demo
-            - git push https://$Username:$Password@git-codecommit.eu-central-1.amazonaws.com/v1/repos/test-2 --all
+            - git push https://$USERNAME_ENV:$PASSWORD_ENV@git-codecommit.eu-central-1.amazonaws.com/v1/repos/test-2 --all
 
           
